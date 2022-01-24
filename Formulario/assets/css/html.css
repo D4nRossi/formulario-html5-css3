@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+
+.erro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo{
+    width: 100%;
+    height: auto;
+    background: linear-gradient( to bottom right, rgb(156, 56, 156), rgb(233, 178, 76));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-area{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 10px;
+}
+
+#cad{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    align-self: center;
+}
+
+.nome, .nascimento, .email, .sexo, .endereco{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.termo-de-uso{
+    padding:5px;
+}
+.termo-de-uso a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #000;
+}
+
+.cassaco{
+    padding: 5px;
+}
+
+input{
+    outline: 0;
+}
+
+input, select{
+    border-radius: 10px;
+    border: 1px solid rgb(216, 216, 216);
+    padding:5px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#azul{
+    padding:3px;
+}
+
+#enviar{
+    align-self: center;
+    padding:5px;
+    font: 15px;
+    font-family: arial;
+    margin-bottom: 10px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(41, 40, 40);
+    width: 100%;
+    height: 30px;
+}
+
+.datape{
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    align-self: center;
+}
+
+.datape a{
+    text-decoration: none;
+    color: white;
+}.datape a:hover{
+    border-bottom: 1px solid white;
+}
+
+.melby{
+    width: 100%;
+    height: auto;
+}
+
+@media(min-width: 400px){
+    .melby{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media(max-width: 400px){
+    
+    body{
+        margin: 0;
+    }
+
+    .fundo{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .cadastro-area{
+        width: 300px;
+        height: auto;
+    }
+
+    #azul{
+        padding: 3px;
+        width: 280px;
+        border: 1px solid balck;
+    }
+
+    .melby{
+        width: 100%;
+        height: 100vh;
+    }
+}

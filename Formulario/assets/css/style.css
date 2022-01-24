@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+}
+
+.fundo{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( to bottom right, rgb(156, 56, 156), rgb(233, 178, 76));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-area{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 10px;
+}
+
+.login-area h1{
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+
+.name, .password, .botão   {
+    padding:10px;
+    align-self: center;
+}
+
+#acess{
+    align-self: center;
+}
+
+.social{
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.media{
+    align-self: center;
+}
+
+.forgot{
+    padding: 10px;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: black;
+}.forgot a:hover{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.login-area input{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(211, 208, 208);
+    outline: 0;
+    padding: 5px;
+}
+
+@media(max-width:540px){
+    .login-area{
+        width: 200px;
+        height: auto;
+    }
+}

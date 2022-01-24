@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/html.css">
+</head>
+<body>
+    <section>
+    <form method="get" action="cassaco.html">
+        <div class="fundo">
+            <div class="cadastro-area">
+                <p id="cad">Cadastro</p>
+                <div class="nome">
+                    Nome completo <br>
+                    <input type="text" placeholder="Nome e Sobrenome" required>                    
+                </div>
+                <div class="nascimento">
+                    Nasci em:
+                    <select name="Ano" required>
+                        <option value="1">1999</option>
+                        <option value="2">2000</option>
+                        <option value="3">2001</option>
+                        <option value="4">2002</option>
+                        <option value="5">2003</option>
+                        <option value="6">2004</option>
+                        <option value="7">2005</option>
+                        <option value="8">2006</option>
+                        <option value="9">2007</option>
+                        <option value="10">2008</option>
+                    </select>
+                </div>
+                <div class="email">
+                    email <br>
+                    <input type="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-.]+$)" placeholder="daniel@exemplo.com" style="margin-bottom: 5px;"> <br>
+                    Confirme seu email <br>
+                    <input type="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-.]+$)" placeholder="daniel@exemplo.com">
+                </div>
+                <div class="sexo">
+                    Genero com que se identifica <br>
+                    <select name="Sexo">
+                        <option value="1">Macho</option>
+                        <option value="2">Femea</option>
+                        <option value="3">Panzerkampfwagen</option>
+                        <option value="4">Monza rebaixado com escapamento furado</option>
+                        <option value="5">Cassaco</option>
+                    </select>
+                </div>
+                <div class="endereco">
+                    Endereço <br>
+                    <input type="text" style="margin-bottom: 5px;" placeholder="Rua dos Calvos" required><br>
+                    Número <br> <input type="text" style="margin-bottom: 5px;" placeholder="000" required> <br>
+                    Complemento <br>
+                    <input type="text" name="Complemento" style="margin-bottom: 5px;" placeholder="casa x" required> <br>
+                    CEP <br>
+                    <input type="text" name="CEP" style="margin-bottom: 5px;" placeholder="12345-678" required>
+                </div>
+                <div class="termo-de-uso">
+                    Eu li e concordo com os <a href="https://instagram.com/danielrossi.png/" target="_blank">termos de uso</a> <input type="checkbox" required>
+                </div>
+                <div class="cassaco">
+                    Disserte um pouco sobre a supremacia dos cassacos: <br>
+                    <textarea name="cassaco" id="azul" cols="50" rows="10" placeholder="Cassacos..." style="margin-top: 5px;"></textarea required>
+                </div>
+                <div class="submit">
+                    <div>
+                        <input type="submit" id="enviar">
+                    </div>    
+            </div>
+        </div>
+    </form>
+    </section>
+    <footer>
+        <div class="rodape">
+            <div class="datape">
+                &copy; <a href="https://instagram.com/danielrossi.png/" target="_blank">Daniel Rossi de Amorim</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
